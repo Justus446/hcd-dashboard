@@ -296,18 +296,6 @@ let tb = [
 	  Notes: ''
 	},
 	{
-	  page: 'Data Quality: Completeness',
-	  level: 'County',
-	  name: 'Completeness',
-	  id: 'county__dq_completeness',
-	  local_url: `${APP_BASE_URL}/api/county/dataquality/completeness`,
-	  url: `${DHIS_BASE_API_URL}/analytics.json?dimension=dx:zB1NW37bi46;RRnz4uPHXdl.EXPECTED_REPORTS`,
-	  default_period: 'LAST_12_MONTHS',
-	  default_org_unit: 'HfVjCurKxh2',
-	  default_org_unit_level: 5,
-	  Notes: 'Has commodity filter'
-	},
-	{
 	  page: "Data Quality: Concordance",
 	  level: "County",
 	  name: "Artemether-Lumefantrine 20/120 Tabs 6s",
@@ -494,18 +482,6 @@ let tb = [
 	  id: 'county__dq_consistency_llins',
 	  local_url: `${APP_BASE_URL}/api/county/dataquality/consistency/f0AIAR5pJ2F`,
 	  url: `${DHIS_BASE_API_URL}/analytics.json?dimension=dx:f0AIAR5pJ2F.HWtHCLAwprR;f0AIAR5pJ2F.yuvCdaFqdCW;f0AIAR5pJ2F.CckV73xy6HB;f0AIAR5pJ2F.unVIt2C0cdW;f0AIAR5pJ2F.w77uMi1KzOH;f0AIAR5pJ2F.rPAsF4cpNxm`,
-	  default_period: 'LAST_MONTH',
-	  default_org_unit: 'HfVjCurKxh2',
-	  default_org_unit_level: 5,
-	  Notes: ''
-	},
-	{
-	  page: 'Data Quality: Comparison',
-	  level: 'County',
-	  name: 'Comparison',
-	  id: 'county__dq_comparison',
-	  local_url: `${APP_BASE_URL}/api/county/dataquality/comparison`,
-	  url: `${DHIS_BASE_API_URL}/analytics.json?dimension=dx:E1J6vMP5hFO;Gwr4lywXLiM`,
 	  default_period: 'LAST_MONTH',
 	  default_org_unit: 'HfVjCurKxh2',
 	  default_org_unit_level: 5,
