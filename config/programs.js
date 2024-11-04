@@ -289,7 +289,7 @@ let tb = {}
 tb.name = "Tuberculosis"
 tb.id = 3
 tb.thresholds = {"national": [9,18], "subnational": [3,6], "kemsa": [6,9]}
-tb.active = false
+tb.active = true
 tb.owner = "TB Department, MoH"
 tb.pages = getPages(t_b)
 tb.endpoints = t_b
@@ -416,7 +416,7 @@ programs.push(hiv2)
 programs.push(hiv3)
 programs.push(hiv4)
 programs.push(hiv5)
-// programs.push(tb)
+programs.push(tb)
 programs.push(emms)
 programs.push(emms_supplies)
 programs.push(emms_radiology)

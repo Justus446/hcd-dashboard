@@ -494,7 +494,7 @@ const RRSummary = props => {
                             cuData={trnd.cu}
                             OTname={'On-time Facility Reporting rate'}
                             rrname={'Facility Reporting rate'}
-                            cuname={'Community Reporting rate'}
+                            cuname={activProg.id === 3 ? 'Sub County Reporting Rate': 'Community Reporting Rate'}
                         />
                         {oun == null || oun == '~' || oun == "HfVjCurKxh2" ? <></> : (
                             <Bar
