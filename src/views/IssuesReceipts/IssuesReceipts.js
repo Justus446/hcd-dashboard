@@ -159,7 +159,7 @@ const IssuesReceipts = props => {
 
                             let trow = []
                             // trow.push( list_products[index] )
-                            trow.push(reply.fetchedData.metaData.items[issdId].name.replace('MCD_', '').replace('HCD - ','').replace('HIV-', '').replace('Qty Issued by KEMSA', '').replace('Issues', '').trim())
+                            trow.push(reply.fetchedData.metaData.items[issdId].name.replace('MCD_', '').replace('HCD - ','').replace('HIV-', '').replace('Issues', '').replace('TB_FCDRR ', '').replace('Facility_TB_2022 ', '').replace('KEMSA_TB','').trim())
                             trow.push(iss_val)
                             recc.map(r_ec => {
                                 trow.push(r_ec)

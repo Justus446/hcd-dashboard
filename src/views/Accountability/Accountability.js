@@ -171,6 +171,7 @@ const Accountability = props => {
 								.replace('MOH 743 Rev2020_', '')
 								.replace('Physical Count', '')
 								.replace('Ending Balance', '')
+								.replace('TB FCDRR', '')
 								.replace('Closing Balance', '').trim()
 							);
 						});
