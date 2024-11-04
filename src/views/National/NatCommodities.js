@@ -106,6 +106,8 @@ if (e_rr.msg.includes('aborted') || e_rr.msg.includes('NetworkError')) {
                     .replace('Adjusted', '')
                     .replace('HIV-', '')
                     .replace('MCD_', '')
+                    .replace('HCD_TB', '')
+
                     .trim(),
                   id: dx
                 });
