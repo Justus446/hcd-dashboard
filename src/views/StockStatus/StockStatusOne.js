@@ -163,6 +163,8 @@ const StockStatusOne = props => {
                                 .replace('Artemether-Lumefantrine ','AL')
                                 .replace('20/120','')
                                 .replace('Tabs','')
+                                .replace('TB FCDRR', '')
+                                .replace('HCD TB', '')
                             if (headline.toLocaleLowerCase().includes("reporting")) { if(headline.toLocaleLowerCase().includes('time')){headline = "Reporting rate on time"}else{ headline = "Reporting rate"} }
                             heds.push(headline)
                         })
@@ -201,6 +203,10 @@ const StockStatusOne = props => {
                                         .replace('Physical Count', '')
                                         .replace('Ending Balance', '')
                                         .replace('Closing Balance', '').trim()
+                                        .replace('TB FCDRR', '')
+                                        .replace('HCD TB', '')
+
+
                                 );
                                 ro_w.push(<MFLcell dhis_code={o_ou} />);
                                 all_ous.push([

@@ -134,6 +134,7 @@ const StockStatusAll = props => {
                                         .replace('Physical Count', '')
                                         .replace('Ending Balance', '')
                                         .replace('Closing Balance', '').trim()
+                                        .replace('HCD TB', '')
                                 );
                                 dxidsadjc.push(dx_val);
                             }

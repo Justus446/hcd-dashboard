@@ -470,6 +470,9 @@ const Dashboard = props => {
                             .replace('Physical Count', '')
                             .replace('Ending Balance', '')
                             .replace('Closing Balance', '')
+                            .replace('HCD TB', '')
+                            .replace('TB FCDRR ', '')
+
                             .trim()
                     )
                     let mos = parseFloat(mos_arr_vals[pcax]) || 0.0
