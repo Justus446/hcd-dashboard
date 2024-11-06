@@ -315,6 +315,7 @@ if (e_rr.msg.includes('aborted') || e_rr.msg.includes('NetworkError')) {
               .replace(' Physical count', '')
               .replace(' End of Month', '')
               .replace('KEMSA ', '')
+              .replace('KEMSA_TB','')
               .trim();
             rheads.push(nme);
           }
@@ -327,7 +328,7 @@ if (e_rr.msg.includes('aborted') || e_rr.msg.includes('NetworkError')) {
 
 			//opsoh
 			let opsoh_dx = opsoh_dxs.find(dx_=>dx_.split('.')[0] == pr_id)
-			let v_al = 0; let v_al_arr = data.rows.filter( dr=>dr[0]== opsoh_dx )
+			let v_al = 0; let v_al_arr = data.rows.filter( dr=>dr[0]== opsoh_dx ) 
 			if(v_al_arr.length>0){ v_al = v_al_arr[0][3] }
 			table_row.push(v_al)
 
